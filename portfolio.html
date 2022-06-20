@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- нормалізація -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- наші основні стилі -->
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,46 +14,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+        <!-- хедер -->
     <header class="header">
-        <nav class="header-nav">
-            <a class="logo-link link" href="./index.html">
-                <span class="logo-web">Web</span>Studio
-            </a>
-            <ul class="header-list list">
-                <li class="header-list-item">
-                    <a class="header-link link" href="./index.html">Студия</a>
-                </li> 
-                <li class="header-list-item">
-                    <a class="header-link link current" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="header-list-item">
-                    <a class="header-link link" href="">Контакты</a>
-                </li>
-            </ul>
-            </nav>
-            <ul class="list contact-list">
-                <li>
-                    <a class="link contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="link contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-
+            <div class="container header-container">
+           
+                <a class="logo-link link" href="./index.html">
+                    <span class="logo-web">Web</span>Studio
+                </a>
+                <nav class="header-nav">
+                <ul class="header-list list">
+                    <li class="header-list-item">
+                        <a class="header-link link " href="./index.html">Студия</a>
+                    </li> 
+                    <li class="header-list-item">
+                        <a class="header-link link current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-list-item">
+                        <a class="header-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                </nav>
+                <div class="header-contact">
+                <ul class="list contact-list">
+                    <li>
+                        <a class="link contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="link contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    
     </header>
-
+    
     <main>
+        <!-- секція портфоліо -->
        <section class="section-main ">
+        <div class="container container-box">
            <h1 hidden>Портфолио</h1>
-           <ul class="list">
-               <li><button class="btn" type="button">Все</button></li>
-               <li><button class="btn" type="button">Веб-сайты</button></li>
-               <li><button class="btn" type="button">Приложения</button></li>
-               <li><button class="btn" type="button">Дизайн</button></li>
-               <li><button class="btn" type="button">Маркетинг</button></li>
+           <ul class="list container-button ">
+               <li><button class="btn list-btn btn-1" type="button">Все</button></li>
+               <li><button class="btn list-btn" type="button">Веб-сайты</button></li>
+               <li><button class="btn list-btn" type="button">Приложения</button></li>
+               <li><button class="btn list-btn" type="button">Дизайн</button></li>
+               <li><button class="btn list-btn" type="button">Маркетинг</button></li>
            </ul>
-           <ul class="list">
+           <ul class="list list-box">
                <li class="main-box">
                    <img src="./images/images-portfolio/img-prtf-1.jpg" width="370" height="294" alt="Три фото на экране ноутбука">
                        <h2 class="main-title">Технокряк</h2>
@@ -97,23 +107,24 @@
                        <p class="main-content">Приложение</p>
                </li>
            </ul>
+        </div>
        </section>
 
     </main>
+<!-- футер -->
+<footer class="section-footer">
+    <div class="container container-footer">
+    <a class="link footer-link-logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+    <address>
+       
+    <ul class="list"> 
+        <li> <a class="link footer-adress " href="https://goo.gl/maps/dULMYjYMqGE6EUVB7" target="_blank" rel="noopener noreferrer" >г. Киев, пр-т Леси Украинки, 26</a> </li>      
+        <li> <a class="link footer-link link-mail" href="mailto:info@example.com">info@example.com</a> </li>
+        <li> <a class="link footer-link link-tel" href="tel:+380991111111">+38 099 111 11 11</a> </li>
+    </ul>
+    </address>
+    </div>
 
-    <footer class="section-footer">
-        <a class="link footer-link-logo" href="./index.html">
-            <span class="logo-web">Web</span>Studio
-        </a>
-        <address>
-           
-            <ul class="list"> 
-                <li> <a class="link footer-adress " href="https://goo.gl/maps/dULMYjYMqGE6EUVB7" target="_blank" rel="noopener noreferrer" >г. Киев, пр-т Леси Украинки, 26</a> </li>      
-                <li> <a class="link footer-link " href="mailto:info@example.com">info@example.com</a> </li>
-                <li> <a class="link footer-link " href="tel:+380991111111">+38 099 111 11 11</a> </li>
-            </ul>
-        </address>
-
-    </footer>
+</footer>
 </body>
 </html>

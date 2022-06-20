@@ -32,17 +32,49 @@
         color:var(--light-theme-txt) ;
          }
 
+         /* reset */
+
+         h1,h2,h3,p {
+            margin: 0;
+         }
+         .img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+         }
+
          /* common styles start */
+
+         .container {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            
+         }
          .link {
              text-decoration: none;
          }
          .list {
              list-style: none;
+             margin: 0;
+             padding: 0;
          }
 
          /* common styles end */
 
          /* header section */
+         .header-container {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            border-bottom: 1px solid #ECECEC;
+         }
+         .header-nav {
+            display: flex;
+            margin-left: 93px;
+         }
          .logo-web {
             display: flex;
             font-family: 'Raleway';
@@ -63,13 +95,29 @@
             letter-spacing: 0.03em;
             color:var(--light-theme-txt)
          }
+         .header-list {
+            display: flex;
+         }
          .header-link {
+            display: block;
             font-weight: 500;
             line-height: 1.14;
             letter-spacing: 0.02em;
             color:var(--light-theme-txt);
             cursor: pointer;
+            padding-top: 32px;
+            padding-bottom: 32px;
          }
+         .header-list-item:not(:last-child)  {
+            margin-right: 50px;
+         }
+         .header-contact {
+            margin-left: auto;
+         }
+         .contact-link {
+            margin-left: 50px;
+         }
+         
          .current {
             color: var(--accent-color);
          }
@@ -78,6 +126,7 @@
             color: var(--accent-color);
          }
          .contact-list {
+            display: flex;
             font-weight: 500;
             line-height: 1.07;
             letter-spacing: 0.02em;
@@ -92,10 +141,20 @@
          .contact-link:focus {
              color: var(--accent-color);
          }
+         /* герой */
+         .container-hero {
+            height: 600px;
+         }
+         
+         
          .hero {
+            
              background-color:var(--dark-theme-bg)
          }
+         
          .hero-title {
+            margin-bottom: 25px;
+            padding-top: 200px;
             font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
@@ -105,10 +164,16 @@
             color:var(--dark-theme-txt)
          }
          .button-hero {
+            display: inline-block;
+            margin-left: 485px;
+            margin-bottom: 251px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
             font-weight: 700;
             font-size: 16px;
             line-height: 1.88;
-            display: flex;
+            border-radius: 4px;
             align-items: center;
             text-align: center;
             letter-spacing: 0.06em;
@@ -116,6 +181,7 @@
             background-color: var(--accent-color);
             }
         .btn {
+            padding: 6px 22px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.63;
@@ -124,6 +190,7 @@
             color:var(--light-theme-txt);
             background-color: var(--light-theme-bg);
             cursor: pointer;
+            border: #FFFFFF;
              }
          .btn:hover,
          .btn:focus {
@@ -132,8 +199,23 @@
              background-color: var(--accent-color);
              
              }  
+             /* секция преимущества */
+             .advantages-container {
+               margin-top: 94px;
+             }
+             
+             .advantages-list {
+               display: flex;
+             }
+             .advantages-item:not(:last-child) {
+               margin-right:  30px;
+             }
+             .advtg-box {
+               width: 270px;
+             }
              
              .advantages-title {
+               margin-bottom: 10px;
                font-family: 'Roboto';
                font-style: normal;
                font-weight: 700;
@@ -150,7 +232,16 @@
                 color:var(--content-txt);
              }
 
+             /* чем мы занимаемся */
+             .list-example {
+               display: flex;
+              
+             }
+
              .section-title {
+               margin-top: 94px;
+               margin-bottom: 50px;
+              
                font-family: 'Roboto';
                font-style: normal;
                font-weight: 700;
@@ -161,6 +252,22 @@
                color:var(--light-theme-txt);
                 
                 
+             }
+             .item-example:not(:last-child) {
+               margin-right: 30px;
+             }
+
+             /* Наша команда */
+             .container-team {
+               height: 648px;
+             }
+
+             .list-team {
+               display: flex;
+
+             }
+             .title-team {
+               padding-top: 94px;
              }
 
              .name-team-item {
@@ -189,6 +296,17 @@
                  box-shadow: 0px 1px 3px 0px #0000001F;
 
              }
+             .box-team-item:not(:last-child) {
+               margin-right: 30px;
+               
+             }
+             .name-team-item {
+               margin-top: 30px;
+               margin-bottom: 10px;
+             }
+             .team-prof {
+               margin-bottom: 30px;
+             }
              .section-team {
                  background-color: var(--light-theme-bg);
              }
@@ -202,6 +320,34 @@
                color:var(--light-theme-txt);
                 
              }
+             /* portfolio styles */
+             .container-box {
+               display: flex;
+               
+               flex-wrap: wrap;
+               margin-bottom: 94px;
+             }
+             .container-button {
+               display: flex;
+               margin-top: 94px;
+               margin-bottom: 34px;
+            
+             }
+
+             .list-btn{
+               margin-right: 8px;
+               border-radius: 4px;
+             }
+             .btn-1 {
+               margin-left: 295px;
+             }
+
+             .list-box {
+               
+               display: flex;
+               height: 1360px;
+               flex-wrap: wrap;
+             }
              .main-content {
                 font-size: 16px;
                 line-height: 1.88;
@@ -209,16 +355,33 @@
                 
              }
              .main-box {
-                
+                margin-right: 30px;
+                margin-bottom: 30px;
                 background:var(--white-theme-bg);
-                border: 1px solid var(--borders-box);
+                border-bottom: 1px solid #EEEEEE;
+               
+             
+               }
+             .main-box:nth-child(3n) {
+               margin-right: 0;
              }
+             
+
+
              /* Footer */
              .section-footer {
+               
                background-color: var(--dark-theme-bg);
              }
+             .container-footer {
+               margin-bottom: 94px;
+               height: 252px;
+             }
+             
              .footer-link-logo {
-                display: flex;
+               display: flex;
+               padding-top: 60px;
+               padding-bottom: 20px;
                font-family: 'Raleway';
                font-style: normal;
                font-weight: 700;
@@ -238,6 +401,13 @@
                color: var(--content-txt);
                 line-height: 1.71;
                 color: rgba(255, 255, 255, 0.6);
+             }
+             .link-mail {
+               padding-top: 9px;
+               padding-bottom: 9px;
+             }
+             .link-tel {
+               padding-bottom: 60px;
              }
              
              .footer-adress:hover,
