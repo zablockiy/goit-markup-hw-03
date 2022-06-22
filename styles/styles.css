@@ -38,7 +38,7 @@
             margin: 0;
          }
 
-         .img {
+         img {
             display: block;
             max-width: 100%;
             height: auto;
@@ -354,6 +354,7 @@
              }
              .main-title {
               margin-bottom: 4px;
+              padding-top: 20px;
              }
              .main-content {
                 font-size: 16px;
@@ -364,10 +365,13 @@
              .main-box {
                 margin-right: 30px;
                 margin-bottom: 30px;
+                margin-top: 0px;
+
                
                
              
                }
+               
              .main-box:nth-child(3n) {
                margin-right: 0;
              }
@@ -380,6 +384,7 @@
               border-bottom: 1px solid var(--borders-box);
 
              }
+             
              
 
 
