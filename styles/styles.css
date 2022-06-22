@@ -37,6 +37,7 @@
          h1,h2,h3,p {
             margin: 0;
          }
+
          .img {
             display: block;
             max-width: 100%;
@@ -61,15 +62,23 @@
              margin: 0;
              padding: 0;
          }
+         .section {
+          padding-top: 94px;
+          padding-bottom: 94px;
+         }
+         
 
          /* common styles end */
 
          /* header section */
+         .header {
+          border-bottom: 1px solid #ECECEC;
+         }
          .header-container {
             display: flex;
             align-items: center;
             height: 80px;
-            border-bottom: 1px solid #ECECEC;
+           
          }
          .header-nav {
             display: flex;
@@ -142,19 +151,19 @@
              color: var(--accent-color);
          }
          /* герой */
-         .container-hero {
-            height: 600px;
-         }
+        
          
          
          .hero {
-            
-             background-color:var(--dark-theme-bg)
+          padding-top: 200px;
+          padding-bottom: 200px;
+          text-align: center;  
+           background-color:var(--dark-theme-bg)
          }
          
          .hero-title {
             margin-bottom: 25px;
-            padding-top: 200px;
+            
             font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
@@ -164,9 +173,9 @@
             color:var(--dark-theme-txt)
          }
          .button-hero {
-            display: inline-block;
-            margin-left: 485px;
-            margin-bottom: 251px;
+            border: none;
+            
+           
             width: 200px;
             height: 50px;
             text-align: center;
@@ -174,8 +183,8 @@
             font-size: 16px;
             line-height: 1.88;
             border-radius: 4px;
-            align-items: center;
-            text-align: center;
+            
+            
             letter-spacing: 0.06em;
             color:var(--dark-theme-txt);
             background-color: var(--accent-color);
@@ -200,9 +209,7 @@
              
              }  
              /* секция преимущества */
-             .advantages-container {
-               margin-top: 94px;
-             }
+             
              
              .advantages-list {
                display: flex;
@@ -237,9 +244,12 @@
                display: flex;
               
              }
+             .section-example {
+              padding-top: 0;
+             }
 
              .section-title {
-               margin-top: 94px;
+             
                margin-bottom: 50px;
               
                font-family: 'Roboto';
@@ -258,17 +268,13 @@
              }
 
              /* Наша команда */
-             .container-team {
-               height: 648px;
-             }
+             
 
              .list-team {
                display: flex;
 
              }
-             .title-team {
-               padding-top: 94px;
-             }
+             
 
              .name-team-item {
                font-family: 'Roboto';
@@ -294,6 +300,8 @@
                  box-shadow: 0px 2px 1px 0px #00000033;
                  box-shadow: 0px 1px 1px 0px #00000024;
                  box-shadow: 0px 1px 3px 0px #0000001F;
+                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                 border-radius: 0px 0px 4px 4px;
 
              }
              .box-team-item:not(:last-child) {
@@ -321,16 +329,11 @@
                 
              }
              /* portfolio styles */
-             .container-box {
-               display: flex;
-               
-               flex-wrap: wrap;
-               margin-bottom: 94px;
-             }
+             
              .container-button {
                display: flex;
-               margin-top: 94px;
-               margin-bottom: 34px;
+               margin-bottom: 50px;
+              
             
              }
 
@@ -345,8 +348,11 @@
              .list-box {
                
                display: flex;
-               height: 1360px;
+               
                flex-wrap: wrap;
+             }
+             .main-title {
+              margin-bottom: 4px;
              }
              .main-content {
                 font-size: 16px;
@@ -357,31 +363,37 @@
              .main-box {
                 margin-right: 30px;
                 margin-bottom: 30px;
-                background:var(--white-theme-bg);
-                border-bottom: 1px solid #EEEEEE;
+               
                
              
                }
              .main-box:nth-child(3n) {
                margin-right: 0;
              }
+             .box-content {
+              padding-left: 24px;
+              padding-right: 24px;
+              padding-bottom: 20px;
+              border-left: 1px solid var(--borders-box);
+              border-right: 1px solid var(--borders-box);
+              border-bottom: 1px solid var(--borders-box);
+
+             }
              
 
 
              /* Footer */
              .section-footer {
-               
+               padding-top: 60px;
+               padding-bottom: 60px;
                background-color: var(--dark-theme-bg);
              }
-             .container-footer {
-               margin-bottom: 94px;
-               height: 252px;
-             }
+             
              
              .footer-link-logo {
                display: flex;
-               padding-top: 60px;
-               padding-bottom: 20px;
+               
+               margin-bottom: 20px;
                font-family: 'Raleway';
                font-style: normal;
                font-weight: 700;
@@ -403,11 +415,11 @@
                 color: rgba(255, 255, 255, 0.6);
              }
              .link-mail {
-               padding-top: 9px;
-               padding-bottom: 9px;
+               margin-top: 9px;
+               margin-bottom: 9px;
              }
              .link-tel {
-               padding-bottom: 60px;
+               margin-bottom: 60px;
              }
              
              .footer-adress:hover,
