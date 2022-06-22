@@ -198,7 +198,7 @@
             color:var(--light-theme-txt);
             background-color: var(--light-theme-bg);
             cursor: pointer;
-            border: #FFFFFF;
+            border: var(--white-theme-bg);
              }
          .btn:hover,
          .btn:focus {
@@ -334,6 +334,7 @@
              .container-button {
                display: flex;
                margin-bottom: 50px;
+               justify-content: center;
               
             
              }
@@ -342,9 +343,8 @@
                margin-right: 8px;
                border-radius: 4px;
              }
-             .btn-1 {
-               margin-left: 295px;
-             }
+             
+             
 
              .list-box {
                
